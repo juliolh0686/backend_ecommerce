@@ -1,0 +1,30 @@
+GET http://127.0.0.1:8000/api/users
+
+### Guardar
+
+POST http://127.0.0.1:8000/api/users
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Maria",
+    "email": "maria@mail.com",
+    "password": "123456"
+}
+
+### Show
+
+GET  http://127.0.0.1:8000/api/users/3
+Accept: application/json
+
+### Modificar
+
+PUT   http://127.0.0.1:8000/api/users/3
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Maria mas",
+    "email": "maria@mail.com",
+    "password": "123456"
+}
