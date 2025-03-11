@@ -1,4 +1,5 @@
 GET http://127.0.0.1:8000/api/users
+Accept: application/json
 
 ### Guardar
 
@@ -28,3 +29,7 @@ Content-Type: application/json
     "email": "maria@mail.com",
     "password": "123456"
 }
+
+### Elimibar
+
+DELETE http://127.0.0.1:8000/api/users/2
